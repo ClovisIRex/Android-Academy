@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/london"
+        android:scaleType="centerCrop"
+        android:id="@+id/activtiy_main_header"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to London"
+        android:layout_alignBottom="@id/activtiy_main_header"
+        android:layout_marginLeft="16dp"
+        android:textSize="30sp"
+        android:textColor="@color/header_text"
+        android:background="@color/header_text_bg"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/activtiy_main_header"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Founded:"
+                android:textSize="20sp"
+                android:textColor="@color/title_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="50 AD"
+                android:textColor="@color/description_text"
+                android:textSize="@dimen/regular_text_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Population:"
+                android:textColor="@color/title_text"
+                android:textSize="@dimen/regular_text_size"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="8.788 million"
+                android:textColor="@color/description_text"
+                android:textSize="@dimen/regular_text_size"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details:"
+            android:textSize="@dimen/regular_text_size"
+            android:textColor="@color/title_text"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="blah blah blahddddddddddddddddddddddddddddddd"
+            android:textColor="@color/description_text"
+            android:textSize="@dimen/small_text_size"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="learn more!"/>
+
+
+
+
+
+
+</RelativeLayout>
